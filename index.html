@@ -1,1 +1,50 @@
-webpage
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/rainbow.css" rel="stylesheet" type="text/css">
+<link href="css/tooltip.css" rel="stylesheet" type="text/css">
+<script src="js/rainbow-custom.min.js"></script>
+<script src="js/copyIt.js"></script>
+<script src="js/misc.js"></script>
+</head>
+
+<body text="#00FF00" bgcolor="#000000">
+<h1>Python</h1>
+<button onclick="replace(txt)">Click me</button>
+<button onclick="replace(txt1)">Click me</button>
+<p id="demo"></p>
+
+<script>
+var txt = '1';
+var txt1 = '2';
+</script>
+
+<!-- insert code here -->
+<textarea id="CodeIt" style="display:none;">
+def openFile(path):
+    file = open(path, "r")
+    content = file.read()
+    file.close()
+    return content
+</textarea>
+<!-- end insert -->
+
+<div id="code"><!-- insert code here -->
+<pre><code data-language="python">
+def openFile(path):
+    file = open(path, "r")
+    content = file.read()
+    file.close()
+    return content
+</code></pre><!-- end insert --></div>
+
+<div class="tooltip">
+<button onclick="copyIt()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy code
+  </button>
+</div>
+
+</body>
+</html>
