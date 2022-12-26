@@ -3,33 +3,56 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/rainbow.css" rel="stylesheet" type="text/css">
-<link href="css/tooltip.css" rel="stylesheet" type="text/css">
-<link href="css/button.css" rel="stylesheet" type="text/css">
+<!-- <link href="css/tooltip.css" rel="stylesheet" type="text/css"> -->
 <link href="css/textwrapper.css" rel="stylesheet" type="text/css">
+<link href="css/misc.css" rel="stylesheet" type="text/css">
 </head>
 
 <body text="#00FF00" bgcolor="#000000">
 Python Cheatsheet<br><br>
+
+<button id="contentBtn" onclick="showContent()">Show directory</button><br>
+<div id="contentList" class="contentList" style="display:none;color:#FF5733;">
+  <div> [string] </div>
+  <div> [list] </div>
+</div>
+
 <!--
-<button onclick="replace(linkedin)">Linkedin</button>
-<button onclick="replace(github)">Github</button>
+<button onclick="replace(abc)">Linkedin</button>
+<button onclick="replace(cde)">Github</button>
 <p id="replaceText"></p>
 <script>
-var linkedin = 'https://www.linkedin.com/in/markchanec/';
-var github = 'https://github.com/markchanec';
-</script>
--->
+var abc = '#';
+var cde = '#';
+</script> -->
 
 <!-- insert code here -->
-<textarea id="CodeIt" style="display:none;">
+<!-- <p><textarea id="CodeIt" style="display:none;">
 def openFile(path):
     file = open(path, "r")
     content = file.read()
     file.close()
     return content
-</textarea>
+</textarea> -->
 <!-- end insert -->
+<p><div class="heading">Example 1</div>
+<div id="code"><!-- insert code here -->
+<pre><code data-language="python">
+def openFile(path):
+    file = open(path, "r")
+    content = file.read()
+    file.close()
+    return content
+</code></pre><!-- end insert --></div>
+<div class="tooltip">
+<!-- <button onclick="copyIt()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy code
+  </button>
+</div> -->
 
+
+<p><div class="heading">Example 2</div>
 <div id="code"><!-- insert code here -->
 <pre><code data-language="python">
 def openFile(path):
@@ -39,12 +62,6 @@ def openFile(path):
     return content
 </code></pre><!-- end insert --></div>
 
-<div class="tooltip">
-<button onclick="copyIt()" onmouseout="outFunc()">
-  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-  Copy code
-  </button>
-</div>
 
 <div class="ml5">
   <span class="text-wrapper">
@@ -60,8 +77,8 @@ def openFile(path):
 
 <script src="js/rainbow-custom.min.js"></script>
 <script src="js/anime.min.js"></script>
-<script src="js/copyIt.js"></script>
+<!-- <script src="js/copyIt.js"></script>  -->
 <script src="js/textwrapper.js"></script>
-<!-- <script src="js/misc.js"></script> -->
+<script src="js/misc.js"></script>
 </body>
 </html>
