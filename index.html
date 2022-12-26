@@ -4,21 +4,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/rainbow.css" rel="stylesheet" type="text/css">
 <link href="css/tooltip.css" rel="stylesheet" type="text/css">
-<script src="js/rainbow-custom.min.js"></script>
-<script src="js/copyIt.js"></script>
-<script src="js/misc.js"></script>
+<link href="css/button.css" rel="stylesheet" type="text/css">
+<link href="css/textwrapper.css" rel="stylesheet" type="text/css">
 </head>
 
-<body text="#00FF00" bgcolor="#000000">
-<h1>Python</h1>
-<button onclick="replace(txt)">Click me</button>
-<button onclick="replace(txt1)">Click me</button>
-<p id="demo"></p>
-
+<body text="#00FF00" bgcolor="#000000" style="font-size:2vw;">
+Python Cheatsheet<br><br>
+<!--
+<button onclick="replace(linkedin)">Linkedin</button>
+<button onclick="replace(github)">Github</button>
+<p id="replaceText"></p>
 <script>
-var txt = '1';
-var txt1 = '2';
+var linkedin = 'https://www.linkedin.com/in/markchanec/';
+var github = 'https://github.com/markchanec';
 </script>
+-->
 
 <!-- insert code here -->
 <textarea id="CodeIt" style="display:none;">
@@ -46,5 +46,22 @@ def openFile(path):
   </button>
 </div>
 
+<div class="ml5">
+  <span class="text-wrapper">
+    <span class="line"></span>
+    <span class="letters letters-left">Chan</span>
+    <!-- <span class="letters ampersand">&amp;</span> -->
+    <span class="letters letters-right">E.C.</span>
+    <span class="line"></span>
+  </span>
+  <a href="https://www.linkedin.com/in/markchanec/" class="btn-footer"> Linkedin </a>
+  <a href="https://github.com/markchanec" class="btn-footer"> Github </a>
+</div>
+
+<script src="js/rainbow-custom.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/copyIt.js"></script>
+<script src="js/textwrapper.js"></script>
+<!-- <script src="js/misc.js"></script> -->
 </body>
 </html>
