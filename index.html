@@ -9,13 +9,35 @@
 </head>
 
 <body text="#00FF00" bgcolor="#000000">
-Python Cheatsheet<br><br>
+Pocketsize Python Cheatsheet<br><br>
 
 <button id="contentBtn" onclick="showContent()">Show directory</button><br>
-<div id="contentList" class="contentList" style="display:none;color:#FF5733;">
-  <div> [string] </div>
-  <div> [list] </div>
-</div>
+<div id="contentList" class="contentList" style="display:none;color:#FF5733;"><br>
+<!--  <div> [Basics] </div><br>
+  <div> [Strings] </div><br>
+  
+  <div> [Conditional, Loops] </div><br>
+  <div> [Functions, Lambda] </div><br>
+  <div> [List] </div><br>
+  <div> [Dictionary] </div><br>
+  <div> [Set, Frozenset] </div><br>
+
+  <div> [Files IO] </div><br>
+  <div> [RegEx] </div><br>
+  
+  <div> [Sorting] </div><br>
+  <div> [Data Structures] </div><br>
+  
+  <div> [Iterators, Generators] </div><br>
+  <div> [Functional Programming] </div><br>
+  <div> [Dynamic Programming] </div><br>
+  <div> [Optimisation] </div><br>
+
+  <div> [DS - Numpy] </div><br>
+  <div> [DS - Pandas] </div><br>
+  <div> [Useful Functions] </div><br>
+  <div> [Fun Stuff] </div><br>
+</div>-->
 
 <!--
 <button onclick="replace(abc)">Linkedin</button>
@@ -62,17 +84,17 @@ def openFile(path):
     return content
 </code></pre><!-- end insert --></div>
 
-
 <div class="ml5">
-  <span class="text-wrapper">
-    <span class="line"></span>
-    <span class="letters letters-left">Chan</span>
-    <!-- <span class="letters ampersand">&amp;</span> -->
-    <span class="letters letters-right">E.C.</span>
-    <span class="line"></span>
-  </span>
-  <a href="https://www.linkedin.com/in/markchanec/" class="btn-footer"> Linkedin </a>
-  <a href="https://github.com/markchanec" class="btn-footer"> Github </a>
+  <div class="text-wrapper">
+    <div class="line"></div>
+    <div class="letters letters-left">Chan</div>
+    <!-- <div class="letters ampersand">&amp;</div> -->
+    <div class="letters letters-right">E.C.</div>
+    <div class="line"></div>
+  </div>
+  <a href="https://www.linkedin.com/in/markchanec/" class="btn-footer" title="My Linkedin profile"> Linkedin </a>
+  <a href="https://github.com/markchanec" class="btn-footer" title="My Github profile"> Github </a>
+  <button onclick="goTop()" id="upBtn" title="Go to top">☝️</button>
 </div>
 
 <script src="js/rainbow-custom.min.js"></script>
