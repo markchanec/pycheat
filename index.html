@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Python Reference</title>
+<link rel="icon" type="image/x-icon" href="fav.png">
+<script src="js/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/rainbow.css" rel="stylesheet" type="text/css">
+<!-- <link href="css/tooltip.css" rel="stylesheet" type="text/css"> -->
+<link href="css/textwrapper.css" rel="stylesheet" type="text/css">
+<link href="css/misc.css" rel="stylesheet" type="text/css">
+</head>
+
+<body text="#00FF00" bgcolor="#000000">
+Pocketsize Python Cheatsheet<br><br>
+
+<button id="contentBtn" onclick="showContent()">Show directory</button><br>
+<div id="contentList" class="contentList" style="display:block;color:#FF5733;"><br>
+<p id="text"></p>
+</div>
+
+<!--
+<button onclick="replace(abc)">Linkedin</button>
+<button onclick="replace(cde)">Github</button>
+<p id="replaceText"></p>
+<script>
+var abc = '#';
+var cde = '#';
+</script> -->
+
+<!-- insert code here -->
+<!-- <p><textarea id="CodeIt" style="display:none;">
+def openFile(path):
+    file = open(path, "r")
+    content = file.read()
+    file.close()
+    return content
+</textarea> -->
+<!-- end insert -->
+<div id="example">
+Files IO
+<p><div class="heading">Use context manager</div>
+<div id="code"><!-- insert code here -->
+<pre><code data-language="python">
+"""auto close file to prevent
+   data corruption"""
+with open("input.txt") as file:
+  for line in file:
+</code></pre><!-- end insert -->
+</div></p>
+<!-- <div class="tooltip">
+<button onclick="copyIt()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy code
+  </button>
+</div> -->
+
+<p><div class="heading">Quick processing & read into dict</div>
+<div id="code"><!-- insert code here -->
+<pre><code data-language="python">
+"""Sample file input:
+	apples,4
+	oranges,2 """
+with open("input.txt") as file:
+  abc = {(int(x), int(y)) for x, y in\
+	[c.split(',') for c in file.read().split('\n')]}
+</code></pre><!-- end insert -->
+</div></p>
+
+<p><div class="heading">Using pandas for CSV</div>
+<div id="code"><!-- insert code here -->
+<pre><code data-language="python">
+"""r' for literals
+   ISO code might be needed """
+import pandas as pd
+df = pd.read_csv(r'input.csv')
+</code></pre><!-- end insert -->
+</div></p>
+
+<p><div class="heading">Loading of models</div>
+<div id="code"><!-- insert code here -->
+<pre><code data-language="python">
+#norm for pickled SKLearn models
+import pickle
+loaded_model = pickle.load(open(filename, 'rb'))
+
+#norm for Tensorflow models
+import tensorflow as tf
+new_model = tf.keras.models.load_model('saved_model/my_model')
+</code></pre><!-- end insert -->
+</div></p>
+
+</div>
+
+<div class="ml5">
+  <div class="text-wrapper">
+    <div class="line"></div>
+    <div class="letters letters-left">Chan</div>
+    <!-- <div class="letters ampersand">&amp;</div> -->
+    <div class="letters letters-right">E.C.</div>
+    <div class="line"></div>
+  </div>
+  <a href="https://www.linkedin.com/in/markchanec/" class="btn-footer" title="My Linkedin profile"> Linkedin </a>
+  <a href="https://github.com/markchanec" class="btn-footer" title="My Github profile"> Github </a>
+</div>
+
+<button onclick="goTop()" id="upBtn" title="Go to top">☝️</button>
+
+<script src="js/rainbow-custom.min.js"></script>
+<script src="js/anime.min.js"></script>
+<!-- <script src="js/copyIt.js"></script>  -->
+<script src="js/textwrapper.js"></script>
+<script src="js/misc.js"></script>
+</body>
+</html>

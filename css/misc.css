@@ -1,0 +1,38 @@
+.heading {
+	color: #FFFF00;
+}
+
+.btn-footer {
+	color: grey;
+	text-decoration: none;
+	border: 1px solid;
+	border-radius: 43px;
+	font-size: 13px;
+	padding: 7px 30px;
+	line-height: 47px;
+}
+.btn-footer:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#upBtn {
+  z-index: 99;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 50%;
+  width: 48px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#upBtn:hover {
+  border: 1px solid;
+  border-radius: 43px;
+}
