@@ -36,14 +36,11 @@ def openFile(path):
 </textarea> -->
 <!-- end insert -->
 <div id="example">
-Files IO
-<p><div class="heading">Use context manager</div>
+WIP
+<p><div class="heading">Example 1</div>
 <div id="code"><!-- insert code here -->
 <pre><code data-language="python">
-"""auto close file to prevent
-   data corruption"""
-with open("input.txt") as file:
-  for line in file:
+Coming soon!
 </code></pre><!-- end insert -->
 </div></p>
 <!-- <div class="tooltip">
@@ -53,38 +50,10 @@ with open("input.txt") as file:
   </button>
 </div> -->
 
-<p><div class="heading">Quick processing & read into dict</div>
+<p><div class="heading">Example 2</div>
 <div id="code"><!-- insert code here -->
 <pre><code data-language="python">
-"""Sample file input:
-	apples,4
-	oranges,2 """
-with open("input.txt") as file:
-  abc = {(int(x), int(y)) for x, y in\
-	[c.split(',') for c in file.read().split('\n')]}
-</code></pre><!-- end insert -->
-</div></p>
-
-<p><div class="heading">Using pandas for CSV</div>
-<div id="code"><!-- insert code here -->
-<pre><code data-language="python">
-"""r' for literals
-   ISO code might be needed """
-import pandas as pd
-df = pd.read_csv(r'input.csv')
-</code></pre><!-- end insert -->
-</div></p>
-
-<p><div class="heading">Loading of models</div>
-<div id="code"><!-- insert code here -->
-<pre><code data-language="python">
-#norm for pickled SKLearn models
-import pickle
-loaded_model = pickle.load(open(filename, 'rb'))
-
-#norm for Tensorflow models
-import tensorflow as tf
-new_model = tf.keras.models.load_model('saved_model/my_model')
+Coming soon!
 </code></pre><!-- end insert -->
 </div></p>
 
