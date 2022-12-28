@@ -8,14 +8,18 @@ function replace(topic) {
   document.getElementById("replaceText").textContent = topic;
 }
 
+window.onload = function() {showContent()};
 function showContent() {
   var x = document.getElementById("contentList");
   var y = document.getElementById("contentBtn");
+  var z = document.getElementById("example");
   if (x.style.display === "none") {
     x.style.display = "block";
+	z.style.display = "none";
 	y.innerHTML= "Hide directory";
   } else {
     x.style.display = "none";
+	z.style.display = "block";
 	y.innerHTML= "Show directory";
   }
 }

@@ -13,30 +13,30 @@ Pocketsize Python Cheatsheet<br><br>
 
 <button id="contentBtn" onclick="showContent()">Show directory</button><br>
 <div id="contentList" class="contentList" style="display:none;color:#FF5733;"><br>
-  <div> [Basics] </div><br>
-  <div> [Strings] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Basics] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Strings] </div><br>
+  
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Conditional, Loops] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Functions, Lambda] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [List] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Dictionary] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Set, Frozenset] </div><br>
+
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Files IO] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [RegEx] </div><br>
+  
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Sorting] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Data Structures] </div><br>
   <!--
-  <div> [Conditional, Loops] </div><br>
-  <div> [Functions, Lambda] </div><br>
-  <div> [List] </div><br>
-  <div> [Dictionary] </div><br>
-  <div> [Set, Frozenset] </div><br>
-
-  <div> [Files IO] </div><br>
-  <div> [RegEx] </div><br>
-  
-  <div> [Sorting] </div><br>
-  <div> [Data Structures] </div><br>
-  
-  <div> [Iterators, Generators] </div><br>
-  <div> [Functional Programming] </div><br>
-  <div> [Dynamic Programming] </div><br>
-  <div> [Optimisation] </div><br>
-
-  <div> [DS - Numpy] </div><br>
-  <div> [DS - Pandas] </div><br>
-  <div> [Useful Functions] </div><br>
-  <div> [Fun Stuff] </div><br>-->
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Iterators, Generators] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Functional Programming] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Dynamic Programming] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Optimisation] </div><br>
+  -->
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Numpy Lib] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Pandas Lib] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Useful Functions] </div><br>
+  <div onClick="location.href='abc.html'" style="cursor: pointer;"> [Fun Stuff] </div><br>
 </div>
 
 <!--
@@ -57,32 +57,38 @@ def openFile(path):
     return content
 </textarea> -->
 <!-- end insert -->
-<p><div class="heading">Example 1</div>
-<div id="code"><!-- insert code here -->
-<pre><code data-language="python">
-def openFile(path):
-    file = open(path, "r")
-    content = file.read()
-    file.close()
-    return content
-</code></pre><!-- end insert --></div>
-<div class="tooltip">
-<!-- <button onclick="copyIt()" onmouseout="outFunc()">
-  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-  Copy code
-  </button>
-</div> -->
+<div id="example">
+
+	<p><div class="heading">Example 1</div>
+	<div id="code"><!-- insert code here -->
+	<pre><code data-language="python">
+	def openFile(path):
+		file = open(path, "r")
+		content = file.read()
+		file.close()
+		return content
+	</code></pre><!-- end insert -->
+	</div></p>
+	<!-- <div class="tooltip">
+	<button onclick="copyIt()" onmouseout="outFunc()">
+	  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+	  Copy code
+	  </button>
+	</div> -->
 
 
-<p><div class="heading">Example 2</div>
-<div id="code"><!-- insert code here -->
-<pre><code data-language="python">
-def openFile(path):
-    file = open(path, "r")
-    content = file.read()
-    file.close()
-    return content
-</code></pre><!-- end insert --></div>
+	<p><div class="heading">Example 2</div>
+	<div id="code"><!-- insert code here -->
+	<pre><code data-language="python">
+	def openFile(path):
+		file = open(path, "r")
+		content = file.read()
+		file.close()
+		return content
+	</code></pre><!-- end insert -->
+	</div></p>
+
+</div>
 
 <div class="ml5">
   <div class="text-wrapper">
